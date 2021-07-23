@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class ALU {
+public class AluM0 {
     public  static void main(String []args) {
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Entrer l'operande A:");
         String operandA = sc.next();
         Scanner sc1 = new Scanner(System.in);
@@ -10,10 +10,32 @@ public class ALU {
         String operandB = sc1.next();
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Entrer la fonction F:");
-        String F = sc2.next();
-        int b1 = Integer.parseInt(F, 2);
-        System.out.println(b1);
+        String F = sc2.next();*/
+        String operandA = "1111";
+        String operandB = "1000";
+        String F="0100";
+        String res = ET(operandA,Complement(operandB));
 
+        int res1 = Integer.parseInt(res, 2);
+        int res2 = Integer.parseInt(operandA,2);
+        int res3 = res1+res2;
+        System.out.println(res3);
+        String res4 = Integer.toBinaryString(res3);
+        System.out.println(res4);
+        if (res4.length()>4) {
+            String carryOut = res4.substring(0,1);
+            System.out.println(carryOut);
+            String res5 = res4.substring(1,5);
+
+            System.out.println(res5);
+        }
+        char c = 0;
+        if (res4.length()>4){
+            c= res4.charAt(0);
+        }
+        //System.out.println(c);
+        /*int b1 = Integer.parseInt(F, 2);
+        System.out.println(b1);
         switch (b1)
         {
             case 0:
@@ -66,9 +88,7 @@ public class ALU {
             case 15:
                 System.out.println(operandA);
                 break;
-
-
-        }
+        }*/
     }
     static char flip(char c)
     {

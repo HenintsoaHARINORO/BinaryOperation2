@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Cn=0
 public class AluM0 {
     public  static void main(String []args) {
         /*Scanner sc = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class AluM0 {
         String F = sc2.next();*/
         String operandA = "1111";
         String operandB = "1000";
-        String F="0100";
+        /*String F="0100";
         String res = ET(operandA,Complement(operandB));
 
         int res1 = Integer.parseInt(res, 2);
@@ -24,7 +24,7 @@ public class AluM0 {
         System.out.println(res4);
         if (res4.length()>4) {
             String carryOut = res4.substring(0,1);
-            System.out.println(carryOut);
+            System.out.println("Retenue: "+carryOut);
             String res5 = res4.substring(1,5);
 
             System.out.println(res5);
@@ -32,7 +32,9 @@ public class AluM0 {
         char c = 0;
         if (res4.length()>4){
             c= res4.charAt(0);
-        }
+        }*/
+
+
         //System.out.println(c);
         /*int b1 = Integer.parseInt(F, 2);
         System.out.println(b1);

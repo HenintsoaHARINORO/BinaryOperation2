@@ -2,14 +2,14 @@ class TwosComplement
 {
 
     // Returns '0' for '1' and '1' for '0'
-    static char flip(char c)
+   public static char flip(char c)
     {
         return (c == '0') ? '1' : '0';
     }
 
     // Print 1's and 2's complement of binary number
     // represented by "bin"
-    static void OneAndTwosComplement(String bin)
+   public static String OneAndTwosComplement(String bin)
     {
         int n = bin.length();
         int i;
@@ -22,7 +22,7 @@ class TwosComplement
         {
             ones += flip(bin.charAt(i));
         }
-        System.out.println(ones);
+       // System.out.println(ones);
         // for two's complement go from right to left in
         // ones complement and if we get 1 make, we make
         // them 0 and keep going left when we get first
@@ -47,7 +47,7 @@ class TwosComplement
         {
             twos = '1' + twos;
         }
-
+        return twos;
         //System.out.println("1's complement: " + ones);;
         //System.out.println("2's complement: " + twos);
     }

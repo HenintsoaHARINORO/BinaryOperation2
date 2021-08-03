@@ -1,15 +1,16 @@
 public class NOT {
     public static void main(String [] args){
-        int a= 1010;
+        //int a= 1010;
         int b = 1001;
-        int c = a & b;
+        //int c = a & b;
         //int c = a | b;
         //int c = a^ b;
         //int c = ~a;
-        //int c = a+ (a << 1);
+        int a=7;
+        int c = a+ (a << 1);
         String b1 = "0001";
         String b2 = "1001";
-        System.out.println(c);
+        System.out.println();
 
 
         //System.out.println(add(b1,b2));
